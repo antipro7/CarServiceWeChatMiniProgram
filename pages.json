@@ -1,0 +1,167 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	
+	{
+	    "path" : "pages/xiche/index/index",
+	    "style" :                                                                                    
+	    {
+	        "navigationBarTitleText": "晨夜车管家",
+	        "enablePullDownRefresh": false,
+			"navigationStyle":"custom"
+	    }
+	    
+	},
+		 {
+			"path": "pages/index_4/index_4",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}, {
+			"path": "pages/modular/baoxiu_list/baoxiu_list",
+			"style": {
+				"navigationBarTitleText": "车牌列表"
+			}
+		}, {
+			"path": "pages/modular/wode_guanyu/wode_guanyu",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"enablePullDownRefresh": false
+			}
+		},{
+            "path" : "pages/modular/baoxiu_lishi/baoxiu_lishi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑车辆信息",
+                "enablePullDownRefresh": false
+            }
+        },{
+            "path" : "pages/xiche/xinzheng_chepai/xinzheng_chepai",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加车辆",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/xiche/xinzheng_dingdan/xinzheng_dingdan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/xiche/dingdan_xiangqing/dingdan_xiangqing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/xiche/dingdan/dingdan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "历史订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/xiche/chongzhihuiyuan/chongzhihuiyuan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "晨夜VIP",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/xiche/xiiche_xieyi/xiiche_xieyi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/xiche/selectCar/selectCar",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选择车辆",
+                "enablePullDownRefresh": false,
+				"backgroundColor": "#FFFFFF",
+				"navigationBarBackgroundColor": "#FFFFFF"
+				// "navigationStyle":"custom"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "晨夜车管家",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+	,
+	"tabBar": {
+		"height": "50rpx",
+		"color": "#8b8b8b",
+		"selectedColor": "#484848",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"position": "bottom",
+		"list": [
+			{
+				"pagePath": "pages/xiche/dingdan/dingdan",
+				"text": "订单",
+				"iconPath": "static/img/order.png",
+				"selectedIconPath": "static/img/order2.png"
+			},
+			{
+				"pagePath": "pages/xiche/index/index",
+				"text": "首页",
+				"iconPath": "static/img/home.png",
+				"selectedIconPath": "static/img/home2.png"
+			},
+			// , 
+			// {
+			// 	"pagePath": "pages/index_2/index_2",
+			// 	"text": "更多",
+			// 	"iconPath": "static/ico/gengduo_0.png",
+			// 	"selectedIconPath": "static/ico/gengduo_1.png"
+			// }
+			// ,
+			// {
+			// 	"pagePath": "pages/index_3/index_3",
+			// 	"text": "社区",
+			// 	"iconPath": "static/ico/shequ_0.png",
+			// 	"selectedIconPath": "static/ico/shequ_1.png"
+			// },
+			{
+				"pagePath": "pages/index_4/index_4",
+				"text": "我的",
+				"iconPath": "static/img/mine.png",
+				"selectedIconPath": "static/img/mine2.png"
+			}
+		]
+	}
+	,"permission": {
+    "scope.userLocation": {
+      "desc": "获取位置定位最近小区" // 高速公路行驶持续后台定位
+    }
+  },
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

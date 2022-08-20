@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/xiche/index/index",
+    "pages/index_4/index_4",
+    "pages/modular/baoxiu_list/baoxiu_list",
+    "pages/modular/wode_guanyu/wode_guanyu",
+    "pages/modular/baoxiu_lishi/baoxiu_lishi",
+    "pages/xiche/xinzheng_chepai/xinzheng_chepai",
+    "pages/xiche/xinzheng_dingdan/xinzheng_dingdan",
+    "pages/xiche/dingdan_xiangqing/dingdan_xiangqing",
+    "pages/xiche/dingdan/dingdan",
+    "pages/xiche/chongzhihuiyuan/chongzhihuiyuan",
+    "pages/xiche/xiiche_xieyi/xiiche_xieyi",
+    "pages/xiche/selectCar/selectCar"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "晨夜车管家",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "height": "50rpx",
+    "color": "#8b8b8b",
+    "selectedColor": "#484848",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/xiche/dingdan/dingdan",
+        "text": "订单",
+        "iconPath": "static/img/order.png",
+        "selectedIconPath": "static/img/order2.png"
+      },
+      {
+        "pagePath": "pages/xiche/index/index",
+        "text": "首页",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home2.png"
+      },
+      {
+        "pagePath": "pages/index_4/index_4",
+        "text": "我的",
+        "iconPath": "static/img/mine.png",
+        "selectedIconPath": "static/img/mine2.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用户快速获取位置"
+    }
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap29.json"
+}

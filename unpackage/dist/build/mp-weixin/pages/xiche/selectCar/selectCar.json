@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "选择车辆",
+  "enablePullDownRefresh": false,
+  "backgroundColor": "#FFFFFF",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "usingComponents": {}
+}
